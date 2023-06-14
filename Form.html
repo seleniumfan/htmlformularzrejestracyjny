@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        main {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        a {
+           text-decoration: none;
+        }
+
+        .submit {
+            margin-top: 5px;
+            height: 34px;
+            padding-top: 3px;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Rejestracja</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Imię</label>
+                <input type="text" placeholder="Wpisz imię" name="name" id="name" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Nazwisko</label>
+                <input type="text" placeholder="Wpisz nazwisko" name="surname" id="surname" class="form-control"/>
+            </div>
+            <div style="float:left; width: 33%;">Płeć</div>
+            <div style="float:left">
+                <div class="form-check">
+                    <label for="women" class="form-check-label">Kobieta</label>
+                    <input type="radio" name="sex" id="women" value="women" class="form-check-input" checked/>
+                </div>
+                <div class="form-check">
+                    <label for="man" class="form-check-label">Mężczyzna</label>
+                    <input type="radio" name="sex" id="man" value="man" class="form-check-input"/>
+                </div>
+            </div>
+            <div style="clear:both;padding-top: 27px" class="mb-3">
+                <label for="email" class="form-label">Adres email</label>
+                <input type="email" placeholder="Wpisz adres email" name="email" id="email" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Hasło</label>
+                <input type="password" placeholder="Hasło" name="password" id="password" class="form-control"/>
+                <div style="font-size: 0.8em" id="passwordHelp" class="form-text">Min. 8 znaków</div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-lg-6 col-sm-12">
+                    <label for="city" class="form-label">Miasto</label>
+                    <input name="city" id="city" class="form-control"/>
+                </div>
+                <div class="mb-3 col-lg-4 col-sm-12">
+                    <label for="state" class="form-label">Województwo</label>
+                    <select name="state" id="state" class="form-control form-select mb-3">
+                        <option value="" selected disabled>Wybierz...</option>
+                        <option value="dolnoslaskie">Dolnośląskie</option>
+                        <option value="kujawsko-pomorskie">Kujawsko-pomorskie</option>
+                        <option value="lubelskie">Lubelskie</option>
+                        <option value="lubuskie">Lubuskie</option>
+                        <option value="lodzkie">Łódzkie</option>
+                        <option value="malopolskie">Małopolskie</option>
+                        <option value="mazowieckie">Mazowieckie</option>
+                        <option value="opolskie">Opolskie</option>
+                        <option value="podkarpackie">Podkarpackie</option>
+                        <option value="podlaskie">Podlaskie</option>
+                        <option value="pomorskie">Pomorskie</option>
+                        <option value="slaskie">Śląskie</option>
+                        <option value="swietokrzyskie">Świętokrzyskie</option>
+                        <option value="warminsko-mazurskie">Warmińsko-mazurskie</option>
+                        <option value="wielkopolskie">Wielkopolskie</option>
+                        <option value="zachodniopomorskie">Zachodniopomorskie</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-lg-2 col-sm-12">
+                    <label for="postCode" class="form-label">Kod pocztowy</label>
+                    <input name="postCode" id="postCode" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="acceptRules" id="acceptRules" value="accepted"/>
+                <label for="acceptRules">Akceptuję <a href="Rules.html" target="_blank">regulamin</a></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="agreement" id="agreement" value="agreement"
+                       checked/>
+                <label class="form-check-label" for="agreement">Wyrażam zgodę na otrzymywanie informacji
+                    marketingowych</label>
+            </div>
+            <input class="submit btn btn-primary" type="submit" value="Rejestruj"/>
+        </form>
+    </section>
+</main>
+</body>
+</html>
